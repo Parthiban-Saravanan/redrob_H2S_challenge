@@ -37,9 +37,6 @@ def run_elite_ranking_engine_stream(data_path, job_description):
     # Stage 2: Database Check
     yield (2, stages[1], "Opening read stream to localized JSONL file parameters...", None)
     time.sleep(0.6)
-    if not os.path.exists(data_path):
-        yield (8, "Error", f"Target file '{data_path}' could not be located.", None)
-        return
 
     try:
         df = pd.read_json(data_path, lines=True)
