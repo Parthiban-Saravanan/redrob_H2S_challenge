@@ -70,7 +70,7 @@ left_panel, right_panel = st.columns([1, 2])
 with left_panel:
     st.markdown('<div class="card-shell">', unsafe_allow_html=True)
     st.subheader("🎯 Job Requirements Schema")
-    DATASET_PATH = "candidates.jsonl"
+    DATASET_PATH = "https://docs.google.com/uc?export=download&id=1P_vB8UoqC9c4p-ADu7sWfOCHXJCjPXn_"
     
     job_desc_input = st.text_area(
         "Target Workspace Position Parameter:",
